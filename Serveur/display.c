@@ -66,16 +66,12 @@ void displayPersistentScreen() {
 /** Checks for SDL events (non-blocking)
  * @return true iff the application should quit
  */
-_Bool checkEvents(Point *point) {
+_Bool checkEvents() {
   SDL_Event e;
   while (SDL_PollEvent(&e)){
     switch (e.type) {
     case SDL_QUIT:
         return true;
-    case SDL_MOUSEBUTTONDOWN:
-        point->x = e.button.x;
-        point->y = e.button.y;
-        return false;
     }
   } // while more events
   return false;

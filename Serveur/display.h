@@ -4,11 +4,6 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
 
-typedef struct point {
-    int x;
-    int y;
-} Point;
-
 typedef struct ARGB {
     int r;
     int g;
@@ -48,7 +43,7 @@ void displayPersistentScreen();
 /** Checks for SDL events (non-blocking)
  * @return true si la fenetre est fermée
  */
-_Bool checkEvents(Point *point);
+_Bool checkEvents();
 
 /** Waits for the specified time.
  * @param milliseconds the time to wait. 1000 is 1 second.
