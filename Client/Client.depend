@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1482755425 source:d:\bureau\projets iut\reseauc\client\main.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"main.h"
+
+1482755183 d:\bureau\projets iut\reseauc\client\main.h
+
